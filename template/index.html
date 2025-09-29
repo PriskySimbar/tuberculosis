@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+    <title>TB Detection</title>
+</head>
+<body>
+    <h1>Upload Chest X-ray for TB Detection</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <input type="submit" value="Upload">
+    </form>
+
+    {% if message %}
+        <h2>Result: {{ message }}</h2>
+    {% endif %}
+</body>
+</html>
